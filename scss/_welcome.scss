@@ -1,0 +1,64 @@
+.welcome {
+    padding: 90px 0;
+}
+
+.section-head {
+    margin-bottom: 60px;
+    text-align: center;
+    .section-welcome-title {
+        margin-bottom: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 35px;
+        line-height: 52px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $blue-title;
+    }
+    .section-welcome-text {
+        max-width: 875px;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 23px;
+        color: $darkBlue-text;
+        margin: 0 auto;
+    }
+}
+
+.welcome-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 95px;
+}
+
+.welcome-item {
+    text-align: center;
+    flex-basis: 31.5%;
+    height: 213px;
+    background-color: #f7f7f7;
+    position: relative;
+    padding-top: 110px;
+    border-right: 2px solid $blue-bg;
+    border-bottom: 2px solid $blue-bg;
+    border-left: 2px solid $blue-bg;
+    &_img {
+        background-color: $darkBlue-bg2;
+        width: 165px;
+        height: 147px;
+        padding: 25px;
+        position: absolute;
+        left: 50%;
+        top: -45%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+}
+    &_title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        line-height: 52px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #303030;
+    }
+}

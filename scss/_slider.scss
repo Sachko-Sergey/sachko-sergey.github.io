@@ -1,0 +1,123 @@
+.slider-item-inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.slider-item {
+    color: $white;
+    min-height: 580px;
+    padding-top: 66px;
+    padding-left: 632px;
+    background-image: url(../images/bg-slide.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::before {
+        content: '';
+        background: rgba(#102136, .8);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.slider-item-img {
+    position: absolute;
+    left: -347px;
+    top: 1px;
+}
+
+.slider-box-2 {
+    max-width: 535px;
+    margin-right: 80px;
+}
+
+.slider-box-3 {
+    position: relative;
+    &_top {
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    background-color: rgba($blue-bg, .4);
+    padding: 60px 33px;
+    &_top-title,
+    &_bottom-title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        line-height: 33px;
+        text-transform: uppercase;
+        max-width: 291px;
+        margin-bottom: 28px;
+    }
+    &_bottom{
+        padding-top: 32px;
+        text-align: center;
+        &-info-title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    &::before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: $white;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+}
+
+.info-line-1, .info-line-2 {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.slider-item-title {
+    font-size: 35px;
+    font-family: "Open Sans", sans-serif;
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.229;
+    margin-bottom: 22px;
+}
+
+.slider-item-text {
+    line-height: 25px;
+    margin-bottom: 22px;
+}
+
+.arrow-slide-right, .arrow-slide-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border: none;
+    background: none;
+}
+
+.arrow-slide-right {
+    right: 100px;
+}
+
+.arrow-slide-left {
+    left: 100px;
+}

@@ -1,0 +1,19 @@
+$color: #4183d7;
+$blue-title: #4183d7;
+$blue-icons: #4183d7;
+$blue-bg: #4183d7;
+$darkBlue-text: #1c3665;
+$darkBlue-bg: #1c3665;
+$darkBlue-bg2: #245a9f;
+$white: #fff;
+
+
+
+
+@mixin anima-bg {
+    transition: background-color .2s linear;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    -ms-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+}

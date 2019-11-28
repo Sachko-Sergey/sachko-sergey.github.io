@@ -1,0 +1,133 @@
+.patent {
+    background: $blue-bg;
+    color: $white;
+    padding: 90px 0;
+    background: url(../images/group_doctors.jpg) center no-repeat / cover;
+    position: relative; 
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: rgba($blue-bg, .8);
+    }
+}
+
+.patent-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 6;
+}
+.patent-inner_left {
+    max-width: 550px;
+    &-title {
+        max-width: 473px;
+        font-family: Oswald;
+        font-size: 35px;
+        line-height: 52px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 15px;
+    }
+    &-text {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 27px;
+        color: $white;
+        margin-bottom: 25px;
+    }
+}
+
+.patent-inner_right {
+    min-width: 457px;
+    &-title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 15px;
+    }
+}
+
+.form-record {
+    // text-align: right;
+    input {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 13px 15px;
+        border: 1px solid $white;
+        background: none;
+        color: $white;
+        &::placeholder {
+            color: $white;
+        }
+    }
+    .line-select {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        .sel-1, .sel-2, .sel-3 {
+            height: 51px;
+        }
+        .sel-1 {
+            width: 113px;
+        }
+        .sel-2 {
+            width: 143px;
+        }
+        .sel-3 {
+            width: 172px;
+        }
+    }
+    textarea {
+        padding: 18px;
+        resize: none;
+        width: 100%;
+        min-height: 115px;
+        margin-bottom: 10px;
+        border: 1px solid $white;
+        background: none;
+        color: $white;
+        &::placeholder {
+            color: $white;
+        }
+    }
+    .jq-selectbox__select {
+        line-height: 47px;
+        height: 50px;
+        background: none;
+        border: 1px solid $white;
+        box-shadow: none;
+        text-shadow: none;
+        color: $white;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        .jq-selectbox__trigger-arrow {
+            border-top: 5px solid $white;
+        }
+    }
+    .jq-selectbox__trigger {
+        border-left: none;
+        top: 8px;
+    }
+}
+
+.jq-selectbox__dropdown {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 20px;
+        border: none;
+        border-radius: 0 0 4px 4px;
+        -webkit-border-radius: 0 0 4px 4px;
+        -moz-border-radius: 0 0 4px 4px;
+        -ms-border-radius: 0 0 4px 4px;
+        -o-border-radius: 0 0 4px 4px;
+}

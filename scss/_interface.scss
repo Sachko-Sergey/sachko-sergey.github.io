@@ -1,0 +1,49 @@
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu-btn {
+        color: #fff;
+        padding: 18px 70px;
+        background-color: $blue-bg;
+        @include anima-bg;
+        &:hover {
+            color: #fff;
+            background-color: $darkBlue-bg2;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: $darkBlue-bg2;
+    &-link {
+        display: inline-block;
+        padding: 18px 47px;
+        color: #fff;
+        @include anima-bg;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: #fff;
+            background-color: $blue-bg;
+        }
+    }
+}
+
+.oval-btn {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $white;
+    background: transparent;
+    border: 1px solid $white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    @include anima-bg;
+    &:hover {
+        color: $color;
+        background-color: $white;
+    }
+}
